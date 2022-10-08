@@ -3,27 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Zenith Prepare Academy</title>
-    <link rel="icon" href="svti-logo-long-black.png">
+    <link rel="stylesheet" href="./estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="menu">
-        <nav>
-            <a href="#"><img src="/img/logo-long-white.png" alt="logo zenith prepare academy" class="logo"></a>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">college consulting</a></li>
-                <li><a href="#">classes</a> </li>
-               <li><a href="#">hear from parents</a></li>
-                <li><a href="#">book a call</a></li>
-            </ul>
-        </nav>
-    </header>
+        <nav id="navigation">
 
+            <div class="wrapper" id="menu">
+                <a href="#home"  class="logo">
+                    <img src="/img/logo-long-white.png" alt="logo zenith prepare academy">
+                </a>
+
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="closeMenu()" href="#about">about</a></li>
+                        <li><a onclick="closeMenu()" href="#college_consulting">college consulting</a></li>
+                        <li><a onclick="closeMenu()" href="#classes">classes</a> </li>
+                        <li><a onclick="closeMenu()" href="#hear_from_parents">hear from parents</a></li>
+                        <li><a onclick="closeMenu()" href="#book_a_call">book a call</a></li>
+                    </ul>
+                </div>
+
+                <button
+          aria-expanded="false"
+          aria-label="Abrir Menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="rgb(33, 33, 33)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="rgb(33, 33, 33)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="rgb(33, 33, 33)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+                </button>
+
+                <button
+                aria-expanded="true"
+                aria-label="Fechar Menu"
+                onclick="closeMenu()"
+                class="close-menu"
+                >
+                <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                    d="M30 10L10 30M10 10L30 30"
+                    stroke="rgb(33, 33, 33)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    />
+                </svg>
+                </button>
+            </div>
+
+            
+        </nav>
     <main>
-        <section class="principal">
+        <section id="home" class="principal">
             <h1 class="yellowtitle">#1 Specialized & Award-Winning
             College Consulting Program in the US</h1>
             <section class="textmain">
@@ -38,7 +107,7 @@
         </section>    
     </main>
 
-    <section class="universities">
+    <section class="universities" id="about">
         <h3>Zenith students have been accepted and attend the following universities:</h3>
         <div class="logos-universities">
             <img src="/img/university/Harvard_University_logo.png" alt="Harvard_University_logo">
@@ -76,7 +145,7 @@
         </div>
     </section>
 
-    <section class="satisfaction">
+    <section class="satisfaction" id="college_consulting">
         <h2>Our nationally-recognized college consulting
             program is the most experienced, trusted, and
             fastest-growing in the US
@@ -100,9 +169,9 @@
         </section>
     </section>
 
-    <section class="results">
+    <section class="results" id="classes">
         <h5>WORLD-CLASS RESULTS</h5>
-        <h3>We got <font color ="yellow">6x the National Average </font>
+        <h3>We got <font color ="yellow">6x the National Average </font><br>
             of Students into the<br>
             Top 25 Universities in the US
         </h3>
@@ -112,7 +181,7 @@
         <button class="whitebutton">Watch Our Free Webinar</button>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="hear_from_parents">
        <div>
             <h4>Parent testimonials</h4>
             <h2>Hear from Zenith Parents</h2>
@@ -213,7 +282,7 @@
     </section>
  <!-- specialization -->
 
-    <section class=" specialization">
+    <section class=" specialization" id="book_a_call">
         <div class="bg">
             <h4>AN RESULT-DRIVEN COLLEGE CONSULTING PROGRAM</h4>
             <h1 class="yellowtitle">Zenith’s Award-Winning
@@ -262,6 +331,45 @@
                 <img src="/img/satisfaction.jpg" alt="">
             </div>
         </section>
+
+        <a id="backToTopButton" href="#home">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#391455" />
+              <path
+                d="M20 27V13"
+                stroke="yellow"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13 20L20 13L27 20"
+                stroke="yellow"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
     </footer>
+
+    
+
+    <script>
+        function openMenu() {
+            document.body.classList.add('menu-expanded')
+            }
+
+        function closeMenu() {
+            document.body.classList.remove('menu-expanded')
+            }
+
+    </script>
 </body>
 </html>

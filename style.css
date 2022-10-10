@@ -885,7 +885,8 @@ footer section .riskfree div h3{
     background-color: rgb(33, 33, 33, .8);
 }
 main{
-    background: url("/img/bg/college-background.jpg") fixed no-repeat rgba(0, 0, 0, 0.518);
+    background: url("/img/bg/college-background.jpg") no-repeat;
+    background-size: cover;
     height: auto;
     width: 100%;
     align-items: center;

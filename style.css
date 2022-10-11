@@ -9,7 +9,7 @@
 :root{
     --font-color-black: rgb(33, 33, 33);
     --yellow:  #ffc000;
-    --blue: #391455;
+    --blue: #203864;
     font-size: 62.5%;
 }
 
@@ -190,10 +190,6 @@ nav .wrapper {
     justify-content: space-around;
 }
   
-nav.scroll {
-    background: green;
-}
-  
 nav button {
     background: none;
     border: none;
@@ -288,7 +284,7 @@ body.menu-expanded button {
 }
   
 body.menu-expanded button path {
-    stroke: rgb(122, 4, 96);
+    stroke: var(--font-color-black);
 }
 
 main{
@@ -302,10 +298,11 @@ main{
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding-top: 12% ;
 }
 
 main h1 {
-    padding-top: 5%;
+    margin-top: 5%;
 }
 
 main section {
@@ -333,7 +330,7 @@ main section p:last-child{
     color: #474747;
     padding: 8%;
     margin: auto;
-    font-size: 20px;
+    font-size: 2.7em;
 }
 
 .logos-universities{
@@ -345,36 +342,8 @@ main section p:last-child{
     margin-bottom: 1vw;
     padding: 2% 8%;
     
-    -webkit-animation: slide-in-right 0.5s 0.6s both;
-    animation: slide-in-right 0.5s 0.6s both;
-    
   }
 
-@-webkit-keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
 
 .logos-universities img{
     width: 36vw;
@@ -418,15 +387,16 @@ main section p:last-child{
 }
 
 .ranked .bluebg h2{
-    font-size: 3em;
+    font-size: 5em;
     line-height: 1.3em;
     font-weight: 600;
     padding: 5%;
+    padding-top: 3%;
 }
 
 
 .ranked .bluebg .zenithtop p{
-    font-size: 16px;
+    font-size: 2.5em;
     font-weight: 300;
     padding-top: 1vw;
 }
@@ -458,7 +428,7 @@ main section p:last-child{
 
 .satisfaction h2{
        color: var(--blue);
-       font-size: 2em;
+       font-size: 3em;
        margin: auto;
        padding: 8%;
 }
@@ -470,8 +440,9 @@ main section p:last-child{
     justify-items: center;
     align-items: center;
     margin: auto;
-    padding: 8%;
+    padding: 4%;
     background-color: #9b9898;
+    width: 100%;
 }
 
 .data div {
@@ -479,7 +450,6 @@ main section p:last-child{
     border-radius: 8%;
     margin:4%;
     padding: 8%;
-    max-width: 96%;
 }
 
 .data .map{
@@ -489,7 +459,7 @@ main section p:last-child{
 
 .data h1{
     font-size: 100px;
-    color: #203864;
+    color: var(--blue);
     padding-bottom: 0;
 }
 
@@ -511,16 +481,16 @@ main section p:last-child{
 
 .results h5{
     padding-top: 2%;
-    font-size: 12px;
+    font-size: 2em;
 }
 .results h3{
-    font-size: 20px;
+    font-size: 3.5em;
     margin: auto;
     padding: 2% 8%;
     line-height: 1.2em;
 }
 .results p{
-    font-size: 14px;
+    font-size: 2em;
     padding: 2% 8%;
 }
 
@@ -540,23 +510,23 @@ main section p:last-child{
 
 .testimonials h4{
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 2em;
     padding-top: 2%;
 }
 
 .testimonials h2, .testimonials p{
-    color: #1d1b6a;
+    color: var(--blue);
 }
 
 .testimonials h2{
-    font-size: 2.3em;
+    font-size: 4em;
     padding-top: .2vw;
 }
 
 .testimonials p{
     font-weight: thin;
     padding-top: .2vw;
-    font-size: 14px;
+    font-size: 2em;
 }
 
 .testimonials .images{
@@ -593,35 +563,8 @@ main section p:last-child{
     background-color: white;
 
     margin: 8% 4%;
-
-    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
-	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
 
-@-webkit-keyframes slide-in-bottom {
-    0% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-bottom {
-    0% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
   
 
 .stars:hover{
@@ -660,7 +603,7 @@ main section p:last-child{
 
 
 .stars .starsimage{
-    width: 60%;
+    width: 40%;
     margin: auto;
     margin: 3%;
     filter: drop-shadow(3px 3px 4px rgba(34, 34, 34, 0.4));
@@ -670,7 +613,7 @@ main section p:last-child{
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 4%;
+    padding-bottom: 2%;
 }
 .check{
     width: auto;
@@ -1091,42 +1034,25 @@ main section p:last-child{
     align-items: center;
     width: 88%;
     margin: auto;
-    padding: 1vw;
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 }
-@-webkit-keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  } 
 
+.data div{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: flex-end;
+}
 .data .map{
     max-width: 15vw;
 }
 
 .data h1{
     font-size: 7vw;
-    color: #203864;
+    color: var(--blue);
 }
 
 .data h4{
@@ -1203,7 +1129,7 @@ main section p:last-child{
 }
 
 .testimonials h2, .testimonials p{
-    color: #1d1b6a;
+    color: var(--blue);
 }
 
 .testimonials h2{
@@ -1256,7 +1182,7 @@ main section p:last-child{
     border-radius: 10px 10px 10px 10px;
 
     width: 95%;
-    height: 25vw;
+    height: 100%;
     align-content: space-between;
     display: flex;
     flex-direction: column;
@@ -1282,7 +1208,7 @@ main section p:last-child{
 }
 
 .content p:first-child{
-    color: #1d1b6a;
+    color: var(--blue);
     font-size: 4em;
     align-self: flex-start;
     margin-top: -1vw;
@@ -1291,7 +1217,7 @@ main section p:last-child{
 }
 
 .content p:last-child{
-    color: #1d1b6a;
+    color: var(--blue);
     font-size: 5em;
     align-self: flex-end;
     margin-bottom: -4.5vw;
@@ -1343,24 +1269,10 @@ main section p:last-child{
     background-position: top;
 }
 
-.specialization h4{
-    text-transform: uppercase;
-    color: white;
-    font-size: 2em;
-    padding: 1.7vw;
-}
-
-.specialization h1{
-    padding: 1vw 0;
-    line-height: .9em;
-    width: 75%;
-    margin: auto;
-}
-
 .specialization p{
     color: white;
     padding: 2vw;
-    font-size: 30px;
+    font-size: 2em;
     width: 65%;
     margin: auto;
 }

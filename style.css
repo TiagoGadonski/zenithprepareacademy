@@ -344,7 +344,37 @@ main section p:last-child{
     margin-top: 1vw;
     margin-bottom: 1vw;
     padding: 2% 8%;
+    
+    -webkit-animation: slide-in-right 0.5s 0.6s both;
+    animation: slide-in-right 0.5s 0.6s both;
+    
   }
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 
 .logos-universities img{
     width: 36vw;
@@ -563,7 +593,36 @@ main section p:last-child{
     background-color: white;
 
     margin: 8% 4%;
+
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 
 .stars:hover{
     background-color: #b5b5b5;
@@ -1033,7 +1092,33 @@ main section p:last-child{
     width: 88%;
     margin: auto;
     padding: 1vw;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 }
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  } 
 
 .data .map{
     max-width: 15vw;
@@ -1303,24 +1388,24 @@ footer section {
 
 footer section img {
     height: 15vw;
-    padding: 1.5vw;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 
-footer section .national{
+footer .national{
     padding: 1vw;
     text-align: left;
 }
 
-footer section .national h3 {
+footer .national h3 {
     padding-top: 10px;
     text-align: left;
 }
 
-footer section h3{
+footer h3{
     font-size: 32px;
     padding-bottom: 2vw;
     align-content: space-between;
@@ -1331,11 +1416,11 @@ footer section p{
     padding-bottom: 2vw;
 }
 
-footer section .text-footer p:last-child{
+footer .text-footer p:last-child{
     padding-bottom: 0;
 }
 
-footer section .riskfree div h3{
+footer .riskfree div h3{
     font-size: 32px;
     padding-bottom: 2vw;
     align-content: space-between;
@@ -1345,15 +1430,17 @@ footer section .riskfree div h3{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2vw 0;
+    padding:4% 8%;
     text-align: left;
 }
 
-
-
-.riskfree .text-risk{
+.text-risk h3{
     text-align: right;
-    padding: 2vw;
+}
+
+.text-risk p{
+    text-align: right;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1361,16 +1448,21 @@ footer section .riskfree div h3{
 
 .riskfree img {
     height: 20vw;
-    padding: 1vw;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: -1vw;
+    margin: auto;
 }
 
 .image100{
     display: flex;
     align-items: center;
+    margin-left: 48px;
+}
+
+.image100:last-child{
+    margin-left: 0;
+    margin-right: 48px;
 }
     
 }

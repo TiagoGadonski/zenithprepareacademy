@@ -1226,8 +1226,7 @@ main section p:last-child{
 .signature{
     display: flex;
     margin: auto;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    font-size: 14px;
 }
 .check{
     width: auto;
@@ -1236,11 +1235,21 @@ main section p:last-child{
     margin-right: 1vw;
 }
 
-.name, .describe{
+
+.testimonials .stars .signature .name {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     font-style: italic;
     font-weight: 600;
 }
+
+.testimonials .stars .signature p{
+    padding-top: 0;
+    width: 15vw;
+}
+
+
 /* SPECIALIZATIONS SECTION */
 .specialization{
     background: url('/img/bg/specializationbg.jpg') no-repeat center;
